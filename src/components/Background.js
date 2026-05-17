@@ -7,13 +7,13 @@ function Background({ isDark, onThemeToggle, onBgChange }) {
   const handleRandomBg = () => {
     const colors = isDark ? darkColors : lightColors;
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    onBgChange(randomColor); // Trimitem culoarea aleasă înapoi în Body
+    onBgChange(randomColor);
   };
 
   return (
     <div style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
       <button 
-        onClick={onThemeToggle} // Declanșează funcția din Body
+        onClick={onThemeToggle}
         style={{
           width: '40px',
           height: '40px',

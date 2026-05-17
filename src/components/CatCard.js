@@ -1,12 +1,10 @@
 import './CatCard.css';
 import React from 'react';
 
-// 1. Definim componentul Stars (Aici se rezolvă eroarea ta)
 function Stars({ count }) {
-  // Verificăm dacă există o notă validă, altfel punem 0
+
   const validCount = count ? Math.max(0, Math.min(5, count)) : 0;
   
-  // Repetă emoji-ul stea de 'validCount' ori
   return <span>{"⭐".repeat(validCount)}</span>;
 }
 

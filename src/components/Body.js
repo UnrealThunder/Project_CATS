@@ -53,7 +53,6 @@ function Body() {
   const finalBgColor = bgColor ? bgColor : (isDark ? "#1e1e1e" : "#ffffff");
   
 return (
-    /* Pasul 1: Mutăm stilurile de fundal direct pe elementul părinte <main> */
     <main 
       className="body" 
       style={{
@@ -70,14 +69,11 @@ return (
         width: '100%'
       }}
     >
-      {/* Pasul 2: Componenta Background (butoanele de temă/culori) stă acum sus, în interiorul fundalului */}
       <Background 
         isDark={isDark} 
         onThemeToggle={handleThemeToggle}
         onBgChange={(color) => setBgColor(color)}
       />  
-
-      {/* Căutarea și butoanele */}
       <div style={{ marginTop: '20px', marginBottom: '20px' }}>
         <input 
           value={searchTerm} 
@@ -94,14 +90,10 @@ return (
         <button onClick={handleSearch} style={{ marginLeft: '10px', padding: '8px 12px' }}>Cauta</button>
         <button onClick={handleRandom} style={{ marginLeft: '10px', padding: '8px 12px' }}>Rasa aleatoare</button>
       </div>
-
-      {/* Afișarea datelor */}
       {loading && <p>Se incarca...</p>}
       {catData && !loading && <CatCard cat={catData} darkMode={isDark} />}
       
     </main>
   );
 }
-
-
 export default Body;
