@@ -1,0 +1,38 @@
+.cat-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cat-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.cat-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cat-card p {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.stars {
+  font-size: 1.3em;
+}
