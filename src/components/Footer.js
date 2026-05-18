@@ -1,7 +1,7 @@
 import './Footer.css';
 
 function Footer() {
-  const currentYear = new Date().getFullYear(); // AN DINAMIC!
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer">
@@ -10,7 +10,7 @@ function Footer() {
         <ul>
           <li>
             <a href="https://react.dev" target="_blank" rel="noreferrer">
-              React Documentation
+              React
             </a>
           </li>
           <li>
